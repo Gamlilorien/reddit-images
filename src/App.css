@@ -2,3 +2,21 @@ html, body, div, .container  {
   background-color: black;
   color: white;
 }
+
+.entry-row {
+  margin-bottom: 2em;
+}
+
+img {
+  border: 2px rgb(25, 228, 238) solid;
+}
+
+a {
+  color: rgb(25, 228, 238);
+}
+a:hover {
+  color: rgb(150 239 244);
+}
+img:hover {
+  border: 2px rgb(150 239 244) solid;
+}

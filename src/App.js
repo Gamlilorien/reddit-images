@@ -28,11 +28,32 @@ class App extends Component {
   render () {
     return (
       <Container>
-      <h1>Hello World...</h1>
-      <Row>
-        <Col>Col 1</Col>
-        <Col>Col 1</Col>
-      </Row>
+        <Row>
+          <Col><h1>r/Funnypics</h1></Col>
+        </Row>
+        {
+          this.state.entries
+            .map(entry =>
+              <div className="row entry-row" key={entry.link}>
+                <div className="col-md-auto">
+                  <img src={entry.thumb} alt={entry.title} target="_blank" rel="noreferrer" />
+                </div>
+                <div className="col">
+                  <div className="row"><h3>{entry.title}</h3></div>
+                  <div className="row">
+                    <div className="col">
+                      <span>Favorite | </span>
+                      <a href={entry.link} alt={entry.title} target="_blank" rel="noreferrer">View Post</a>
+                      <span> | </span>
+                      <a href={entry.image} alt="open full size image in a new tab" target="_blank" rel="noreferrer">View Image</a>
+                    </div>
+                  </div>
+            
+                  <div className="row"></div>
+                </div>
+              </div>
+            )
+        }
     </Container>
     )
   }
