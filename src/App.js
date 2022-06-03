@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import {Container, Row, Col} from "reactstrap";
+import {Container} from "reactstrap";
 import './App.css';
 import API from './utils/API';
-import imageIcon from './icons/image-solid.svg';
-import linkIcon from './icons/reddit-square-brands.svg';
-import favIcon from './icons/bookmark-regular.svg';
+import Header from './components/Header';
+import EntryList from './components/EntryList';
 
 class App extends Component {
   state = {
@@ -31,38 +30,9 @@ class App extends Component {
   render () {
     return (
       <Container>
-        <Row>
-          <Col><h1>r/Funnypics</h1></Col>
-        </Row>
-        {
-          this.state.entries
-            .map(entry =>
-              <div className="row entry-row" key={entry.link}>
-                <div className="col-md-auto">
-                <a href={entry.image} alt="open full size image in a new tab" target="_blank" rel="noreferrer"><img src={entry.thumb} className="thumbnail" alt={entry.title} target="_blank" rel="noreferrer" /></a>
-                </div>
-                <div className="col">
-                  <div className="row"><h3>{entry.title}</h3></div>
-                  <div className="row">
-                    <div className="col">
-                      <img src={favIcon} alt="mark as favorite" className="blue-icon"  />
-                      <span> | </span>
-                      <a href={entry.link} alt={entry.title} target="_blank" rel="noreferrer">
-                        <img src={linkIcon} alt="view post" className="blue-icon"  />
-                      </a>
-                      <span> | </span>
-                      <a href={entry.image} alt="open full size image in a new tab" target="_blank" rel="noreferrer">
-                        <img src={imageIcon} alt="open full size" className="blue-icon"  />
-                      </a>
-                    </div>
-                  </div>
-            
-                  <div className="row"></div>
-                </div>
-              </div>
-            )
-        }
-    </Container>
+        <Header />
+        <EntryList entries={this.state.entries}/>
+      </Container>
     )
   }
 }
