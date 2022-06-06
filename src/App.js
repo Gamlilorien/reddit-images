@@ -5,6 +5,16 @@ import API from './utils/API';
 import Header from './components/Header';
 import EntryList from './components/EntryList';
 
+// const toggleFavorite = () => {
+//   //let isFav = entry.isFavorite;
+//   // if(isFav === true) {
+//   //   this.setState({isFavorite: false})
+//   // } else {
+//   //   this.setState({isFavorite: true})
+//   // }
+//   console.log(this.state.entries)
+// }
+
 class App extends Component {
   state = {
     entries: [],
@@ -27,11 +37,16 @@ class App extends Component {
     .catch(err => console.log(err));
   }
 
+ newSort = (sort) => {
+    //this.setState({ sortBy: sort });
+    console.log('?click...')
+  }
+
   render () {
     return (
       <Container>
         <Header />
-        <EntryList entries={this.state.entries}/>
+        <EntryList entries={this.state.entries} />
       </Container>
     )
   }

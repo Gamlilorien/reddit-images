@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-function getEntries() {
+const getEntries = () => {
     return axios.get("https://www.reddit.com/r/Funnypics.json");
 };
 
-function parseJSON(res) {
+const parseJSON = (res) => {
     let raw = res.data.data.children;
     let myArray = [];
     raw.map(entry =>
@@ -13,6 +13,8 @@ function parseJSON(res) {
                 title: entry.data.title,
                 image: entry.data.url,
                 thumb: entry.data.thumbnail,
+                created: entry.data.created_utc,
+                isFavorite: false,
                 link: "https://www.reddit.com" +entry.data.permalink
             }
         )

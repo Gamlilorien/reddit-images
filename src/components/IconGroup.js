@@ -1,18 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './IconGroup.css';
 import imageIcon from '../icons/image-solid.svg';
 import linkIcon from '../icons/reddit-square-brands.svg';
 import favIcon from '../icons/bookmark-regular.svg';
-//import favSelectedIcon from './icons/bookmark-solid.svg';
+import favSelectedIcon from '../icons/bookmark-solid.svg';
+
+
 
 const IconGroup = (props) => {
-    //console.log(props)
+    const [isFav, updateFav] = useState(props.entry.isFavorite);
     const entry = props.entry;
+
+    const toggleFavorite = () => {
+      //let isFav = entry.isFavorite;
+      if(isFav === true) {
+        updateFav(false)
+      } else {
+        updateFav(true)
+      }
+      updateFavorite(entry.title)
+    }
+
+    const updateFavorite = (title) => {
+      for(const obj of props.array) {
+      if(obj.title === title) {
+          let current = obj.isFavorite;
+          if(current === true) {
+              obj.isFavorite = false;
+          } else {
+              obj.isFavorite = true;
+          } 
+        }
+      }
+    console.log(props.array)
+    }
 
     return (
         <div className="row">
         <div className="col">
-          <img src={favIcon} alt="favorite" className="blue-icon" />
+          {
+            isFav ? (
+              <img src={favSelectedIcon} alt="favorited" className="blue-icon" onClick={toggleFavorite} />
+            ) : (
+              <img src={favIcon} alt="click to favorite" className="blue-icon" onClick={toggleFavorite} />
+            )
+          }
           <span> | </span>
           <a href={entry.link} alt={entry.title} target="_blank" rel="noreferrer">
             <img src={linkIcon} alt="view post" className="blue-icon"  />

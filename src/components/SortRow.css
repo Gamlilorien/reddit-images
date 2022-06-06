@@ -1,0 +1,9 @@
+.sort-col {
+    padding-bottom: 4px;
+}
+.not-active {
+    color: #00CCCC;
+  }
+.not-active:hover {
+color: #99FFFF;
+}
