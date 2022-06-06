@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortRow matches test snapshot 1`] = `
+<div
+  className="row"
+  value="post"
+>
+  <div
+    className="sort-col col"
+  >
+    <div
+      className="float-end"
+    >
+      <span>
+        Sort by: 
+      </span>
+      <span
+        className="active"
+        onClick={[Function]}
+        value="post"
+      >
+        Post |
+      </span>
+      <span
+        className="not-active"
+        onClick={[Function]}
+        value="ascending"
+      >
+         A-z |
+      </span>
+      <span
+        className="not-active"
+        onClick={[Function]}
+        value="descending"
+      >
+         Z-a
+      </span>
+    </div>
+  </div>
+</div>
+`;

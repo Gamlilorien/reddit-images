@@ -32,7 +32,7 @@ const IconGroup = (props) => {
           } 
         }
       }
-    console.log(props.array)
+    //console.log(props.array)
     }
 
     return (

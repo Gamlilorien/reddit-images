@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconGroup matches test snapshot 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col"
+  >
+    <img
+      alt="click to favorite"
+      className="blue-icon"
+      onClick={[Function]}
+      src="bookmark-regular.svg"
+    />
+    <span>
+       | 
+    </span>
+    <a
+      alt="Here Ya Go"
+      href="https://www.reddit.com/r/Funnypics/comments/v4u7s7/here_ya_go/"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="view post"
+        className="blue-icon"
+        src="reddit-square-brands.svg"
+      />
+    </a>
+    <span>
+       | 
+    </span>
+    <a
+      alt="open full size image in a new tab"
+      href="https://i.redd.it/ecy7638h8n391.jpg"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="open full size"
+        className="blue-icon"
+        src="image-solid.svg"
+      />
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconGroup matches test snapshot 1`] = `
+<div>
+  <div
+    className="row"
+    value="post"
+  >
+    <div
+      className="sort-col col"
+    >
+      <div
+        className="float-end"
+      >
+        <span>
+          Sort by: 
+        </span>
+        <span
+          className="active"
+          onClick={[Function]}
+          value="post"
+        >
+          Post |
+        </span>
+        <span
+          className="not-active"
+          onClick={[Function]}
+          value="ascending"
+        >
+           A-z |
+        </span>
+        <span
+          className="not-active"
+          onClick={[Function]}
+          value="descending"
+        >
+           Z-a
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row entry-row"
+  >
+    <div
+      className="col-md-auto"
+    >
+      <a
+        alt="open full size image in a new tab"
+        href="https://i.redd.it/ecy7638h8n391.jpg"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Test entry #2"
+          className="thumbnail"
+          rel="noreferrer"
+          src="https://b.thumbs.redditmedia.com/i32pGUEIzNKdU6EVifHXopFsIW6jEkZ-aTXdyp4-KkY.jpg"
+          target="_blank"
+        />
+      </a>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="row"
+      >
+        <h3>
+          Test entry #2
+        </h3>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt="click to favorite"
+            className="blue-icon"
+            onClick={[Function]}
+            src="bookmark-regular.svg"
+          />
+          <span>
+             | 
+          </span>
+          <a
+            alt="Test entry #2"
+            href="https://www.reddit.com/r/Funnypics/comments/v4u7s7/here_ya_go/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="view post"
+              className="blue-icon"
+              src="reddit-square-brands.svg"
+            />
+          </a>
+          <span>
+             | 
+          </span>
+          <a
+            alt="open full size image in a new tab"
+            href="https://i.redd.it/ecy7638h8n391.jpg"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="open full size"
+              className="blue-icon"
+              src="image-solid.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row entry-row"
+  >
+    <div
+      className="col-md-auto"
+    >
+      <a
+        alt="open full size image in a new tab"
+        href="https://i.redd.it/ecy7638h8n391.jpg"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Here Ya Go"
+          className="thumbnail"
+          rel="noreferrer"
+          src="https://b.thumbs.redditmedia.com/i32pGUEIzNKdU6EVifHXopFsIW6jEkZ-aTXdyp4-KkY.jpg"
+          target="_blank"
+        />
+      </a>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="row"
+      >
+        <h3>
+          Here Ya Go
+        </h3>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt="click to favorite"
+            className="blue-icon"
+            onClick={[Function]}
+            src="bookmark-regular.svg"
+          />
+          <span>
+             | 
+          </span>
+          <a
+            alt="Here Ya Go"
+            href="https://www.reddit.com/r/Funnypics/comments/v4u7s7/here_ya_go/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="view post"
+              className="blue-icon"
+              src="reddit-square-brands.svg"
+            />
+          </a>
+          <span>
+             | 
+          </span>
+          <a
+            alt="open full size image in a new tab"
+            href="https://i.redd.it/ecy7638h8n391.jpg"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="open full size"
+              className="blue-icon"
+              src="image-solid.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

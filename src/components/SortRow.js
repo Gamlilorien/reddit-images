@@ -14,10 +14,10 @@ const SortRow = (props) => {
     }
 
     return (
-        <Row>
+        <Row value={sortState}>
             <Col className="sort-col">
             <div className="float-end">
-                <span value={sortState}>Sort by: </span>
+                <span >Sort by: </span>
                 <span value="post" className={sortState === 'post'?"active":"not-active"} onClick={sortEntries}>Post |</span>
                 <span value="ascending" className={sortState === 'ascending'?"active":"not-active"} onClick={sortEntries}> A-z |</span>
                 <span value="descending" className={sortState === 'descending'?"active":"not-active"} onClick={sortEntries}> Z-a</span>

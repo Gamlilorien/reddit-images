@@ -37,11 +37,6 @@ class App extends Component {
     .catch(err => console.log(err));
   }
 
- newSort = (sort) => {
-    //this.setState({ sortBy: sort });
-    console.log('?click...')
-  }
-
   render () {
     return (
       <Container>
