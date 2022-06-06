@@ -30,3 +30,5 @@ Within your terminal, download the project and then cd into the new directry to 
 3. `npm test` will run a series of component and unit tests automatically
     While testing, you can type `w` for more info (like updating existing snapshots when known good changes have been made etc)
 4. `control +c` will close your local test server and stop the app from running
+
+![Alt text](/images/app-screenshot.png)
