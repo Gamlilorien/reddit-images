@@ -27,5 +27,6 @@ Within your terminal, download the project and then cd into the new directry to 
 
 1. `npm install` will install and pull down any dependencies
 2. `npm test` will run all defined tests [NOTE: see the new coverage folder that will be created for more verbose details on said tests]
-3. `npm test` will start the app in your browser locally
+3. `npm test` will run a series of component and unit tests automatically
+    While testing, you can type `w` for more info (like updating existing snapshots when known good changes have been made etc)
 4. `control +c` will close your local test server and stop the app from running
