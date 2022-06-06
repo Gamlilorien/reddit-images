@@ -2,7 +2,6 @@
 
 exports[`Thumbnail wmatches test snapshot 1`] = `
 <a
-  alt="open full size image in a new tab"
   href="https://i.redd.it/ecy7638h8n391.jpg"
   rel="noreferrer"
   target="_blank"
@@ -10,9 +9,7 @@ exports[`Thumbnail wmatches test snapshot 1`] = `
   <img
     alt="Here Ya Go"
     className="thumbnail"
-    rel="noreferrer"
     src="https://b.thumbs.redditmedia.com/i32pGUEIzNKdU6EVifHXopFsIW6jEkZ-aTXdyp4-KkY.jpg"
-    target="_blank"
   />
 </a>
 `;

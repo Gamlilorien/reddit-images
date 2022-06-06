@@ -46,11 +46,11 @@ const IconGroup = (props) => {
             )
           }
           <span> | </span>
-          <a href={entry.link} alt={entry.title} target="_blank" rel="noreferrer">
-            <img src={linkIcon} alt="view post" className="blue-icon"  />
+          <a href={entry.link} target="_blank" rel="noreferrer">
+            <img src={linkIcon} alt={entry.title} className="blue-icon"  />
           </a>
           <span> | </span>
-          <a href={entry.image} alt="open full size image in a new tab" target="_blank" rel="noreferrer">
+          <a href={entry.image} target="_blank" rel="noreferrer">
             <img src={imageIcon} alt="open full size" className="blue-icon"  />
           </a>
         </div>

@@ -3,7 +3,7 @@
 exports[`SortRow matches test snapshot 1`] = `
 <div
   className="row"
-  value="post"
+  sortValue="post"
 >
   <div
     className="sort-col col"
@@ -17,21 +17,21 @@ exports[`SortRow matches test snapshot 1`] = `
       <span
         className="active"
         onClick={[Function]}
-        value="post"
+        sortValue="post"
       >
         Post |
       </span>
       <span
         className="not-active"
         onClick={[Function]}
-        value="ascending"
+        sortValue="ascending"
       >
          A-z |
       </span>
       <span
         className="not-active"
         onClick={[Function]}
-        value="descending"
+        sortValue="descending"
       >
          Z-a
       </span>

@@ -17,13 +17,12 @@ exports[`IconGroup matches test snapshot 1`] = `
        | 
     </span>
     <a
-      alt="Here Ya Go"
       href="https://www.reddit.com/r/Funnypics/comments/v4u7s7/here_ya_go/"
       rel="noreferrer"
       target="_blank"
     >
       <img
-        alt="view post"
+        alt="Here Ya Go"
         className="blue-icon"
         src="reddit-square-brands.svg"
       />
@@ -32,7 +31,6 @@ exports[`IconGroup matches test snapshot 1`] = `
        | 
     </span>
     <a
-      alt="open full size image in a new tab"
       href="https://i.redd.it/ecy7638h8n391.jpg"
       rel="noreferrer"
       target="_blank"

@@ -8,19 +8,19 @@ const SortRow = (props) => {
     //const [sort, updateSort] = useState(props.sort);
 
     const sortEntries = (event) => {
-      //console.log(event.target.getAttribute('value'))
-      let newValue = event.target.getAttribute('value');
+      //console.log(event.target.getAttribute('sortValue'))
+      let newValue = event.target.getAttribute('sortValue');
       props.onSortHandler(newValue);
     }
 
     return (
-        <Row value={sortState}>
+        <Row sortValue={sortState}>
             <Col className="sort-col">
             <div className="float-end">
                 <span >Sort by: </span>
-                <span value="post" className={sortState === 'post'?"active":"not-active"} onClick={sortEntries}>Post |</span>
-                <span value="ascending" className={sortState === 'ascending'?"active":"not-active"} onClick={sortEntries}> A-z |</span>
-                <span value="descending" className={sortState === 'descending'?"active":"not-active"} onClick={sortEntries}> Z-a</span>
+                <span sortValue="post" className={sortState === 'post'?"active":"not-active"} onClick={sortEntries}>Post |</span>
+                <span sortValue="ascending" className={sortState === 'ascending'?"active":"not-active"} onClick={sortEntries}> A-z |</span>
+                <span sortValue="descending" className={sortState === 'descending'?"active":"not-active"} onClick={sortEntries}> Z-a</span>
                 </div>
             </Col>
       </Row>
